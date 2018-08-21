@@ -6,6 +6,10 @@ img {
 	max-width: 100%;
 }
 
+title {
+	font-family: courier;
+}
+
 body	{
 	width: 100%;
 	max-width: 100%;
@@ -67,7 +71,7 @@ ul li:not(:last-child) {
 }
 
 ul li a {
-	font-family: Raleway, sans-serif;
+	font-family: "Raleway", sans-serif;
 	font-size: 18px;
 	font-weight: 600;
 	letter-spacing: 6px;
@@ -112,19 +116,19 @@ h1 {
 	letter-spacing: 5px;
 	text-align: center;
 	margin: 0;
-	font-family: Fugaz One, cursive;
+	font-family: "Fugaz One", cursive;
 }
 
 h2	{
 	color: #f2f2f2;
 	letter-spacing: 3px;
-	font-family: Roboto Slab, serif;
+	font-family: "Roboto Slab", serif;
 	font-size: 26px;
 	font-weight: 300;
 }
 
 h4 {
-	font-family: Fugaz One, cursive;
+	font-family: "Fugaz One", cursive;
 	font-size: 40px;
 	text-align: center;
 	letter-spacing: 5px;
@@ -149,6 +153,18 @@ h4 {
 	color: #454545;
 }
 
+.posts:nth-child(odd) {
+	background: #e6ccff;
+}
+
+.posts:nth-last-child(3) {
+	background: #ffe6e6;
+}
+
+.posts:nth-child(4) {
+	background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
+}
+
 .image-frame	{
 	max-width: 100%;
 }
@@ -168,12 +184,12 @@ h3 {
 	text-transform: uppercase;
 	letter-spacing: 3px;
 	text-align: center;
-	font-family: Roboto Slab, serif;
+	font-family: "Roboto Slab", serif;
 	font-weight: 100;
 }
 
 .posts p {
-	font-family: PT Sans, sans-serif;
+	font-family: "PT Sans", sans-serif;
 	font-size: 14px;
 	height: calc(5*1.3em);
 	overflow-y: hidden;
@@ -197,20 +213,22 @@ h3 {
 	text-transform: uppercase;
 	text-decoration: none;
 	color: #f2f2f2;
-	background-color: #565656;
+	background-image: linear-gradient(to right, #a6c0fe 0%, #f68084 51%, #a6c0fe 100%);
 	padding: 10px;
 	margin: 5px 70px;
-	font-family: Raleway, sans-serif;
+	font-family: "Raleway", sans-serif;
 	font-size: 16px;
 	font-weight: 600;
 	letter-spacing: 2px;
+	background-size: 200% auto;
 }
 
 .more-info a:hover {
-	background-color: #c7bbdb;
+	background-position: right center;
 	color: #565656;
 	animation: running;
 	transition: 1s;
+	cursor: pointer;
 }
 
 footer	{
@@ -273,7 +291,24 @@ h6 {
 	}
 
 	ul li:not(:last-child) {
-		margin-right: 40px;
+		margin-right: 16px;
+	}
+
+	ul li a {
+		font-size: 14px;
+	}
+
+	.icon-frame {
+		width: 70px;
+		height: 70px; 
+	}
+
+	.spotlighted {
+		height: 360px;
+	}
+
+	h1 {
+		font-size: 80px;
 	}
 }
 
@@ -304,7 +339,7 @@ h6 {
 	nav ul {display: none; }
 	nav select {
 		display: inline-block;
-		font-family: Raleway, sans-serif;
+		font-family: "Raleway", sans-serif;
 		font-size: 12px;
 		font-weight: 600;
 		letter-spacing: 6px;
